@@ -1,53 +1,53 @@
 html {
-  font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background: #51a8e2 url(http://unsplash.it/1500/1000?image=881&blur=5);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
-body,
-html {
+body {
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-.keys {
+  min-height: 790px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 1;
-  min-height: 100vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
-.key {
-  border: 0.4rem solid black;
-  border-radius: 0.5rem;
-  margin: 1rem;
-  font-size: 1.5rem;
-  padding: 1rem 0.5rem;
-  transition: all 0.07s ease;
-  width: 10rem;
-  text-align: center;
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
-  text-shadow: 0 0 0.5rem black;
+.clock {
+  border: white solid 16px;
+  padding: 2rem;
+  border-radius: 50%;
+  width: 40rem;
+  height: 40rem;
+  position: relative;
 }
 
-.playing {
-  transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-kbd {
-  display: block;
-  font-size: 4rem;
-  color: white;
+.hand__hour-hand,
+.hand__min-hand,
+.hand__second-hand {
+  height: 15px;
+  background: black;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 100%;
+  transform-origin: 100%;
+  -webkit-transition: all 0.03s;
+  transition: all 0.03s;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.1);
+  transition-timing-function: cubic-bezier(0.42, 0, 0.1);
 }
-
-.sound {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  color: #ffc600;
-}
+/*# sourceMappingURL=style.css.map */
