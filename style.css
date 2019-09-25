@@ -19,11 +19,11 @@ body {
 }
 
 .clock {
-  border: white solid 16px;
+  border: white solid 20px;
   padding: 2rem;
   border-radius: 50%;
-  width: 40rem;
-  height: 40rem;
+  width: 20rem;
+  height: 20rem;
   position: relative;
 }
 
@@ -37,7 +37,7 @@ body {
 .hand__min-hand,
 .hand__second-hand {
   height: 15px;
-  background: black;
+  background: white;
   width: 50%;
   position: absolute;
   top: 50%;
