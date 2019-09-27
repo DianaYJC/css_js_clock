@@ -4,41 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>css js clock</title>
+    <title>Scoped CSS Variable and JS</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
-    <div class="clock">
-      <div class="clock-face">
-        <div class="hand__hour-hand"></div>
-        <div class="hand__min-hand"></div>
-        <div class="hand__second-hand"></div>
-      </div>
+    <h2>Update Css Variables with <span class="JS">JS</span></h2>
+
+    <div class="controls">
+      <label for="spacing">Spacing:</label>
+      <input
+        type="range"
+        name="spacing"
+        min="10"
+        ma="200"
+        value="10"
+        data-sizing="px"
+      />
+
+      <label for="blur">Blur:</label>
+      <input
+        type="range"
+        name="blur"
+        min="0"
+        ma="30"
+        value="10"
+        data-sizing="px"
+      />
+
+      <label for="base">Base Color</label>
+      <input type="color" name="base" value="#ffcc70" />
     </div>
-    <style></style>
-
-    <script>
-      const secondHand = document.querySelector(".hand__second-hand");
-      const minHand = document.querySelector(".hand__min-hand");
-      const hourHand = document.querySelector(".hand__hour-hand");
-
-      function getDate() {
-        const now = new Date();
-        const seconds = now.getSeconds();
-        const secondsDegree = (seconds / 60) * 360 + 90;
-        secondHand.style.transform = `rotate(${secondsDegree}deg)`;
-        console.log(seconds);
-
-        const min = now.getMinutes();
-        const minDegree = (min / 60) * 360 + 90;
-        minHand.style.transform = `rotate(${minDegree}deg)`;
-        console.log(min);
-        const hour = now.getHours();
-        const hourDegree = (hour / 12) * 360 + 90;
-        hourHand.style.transform = `rotate(${hourDegree}deg)`;
-      }
-      setInterval(getDate, 1000);
-    </script>
+    <img src="http://unsplash.it/800/500?image=898" />
   </body>
 </html>
