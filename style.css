@@ -1,0 +1,15 @@
+html {
+  background-color: hsl(214, 51%, 52%);
+  color: white;
+}
+body {
+  margin: 1.5rem;
+}
+h2 {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+img {
+  width: 90%;
+}
